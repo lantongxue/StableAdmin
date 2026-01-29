@@ -1,5 +1,5 @@
 {
-    "name": "MineAdmin",
+    "name": "StableAdmin",
     "build": {
         "dockerfile": "../Dockerfile",
         "context": ".."

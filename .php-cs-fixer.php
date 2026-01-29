@@ -1,41 +1,33 @@
 <?php
 
-$header = <<<'EOF'
-This file is part of MineAdmin.
+declare(strict_types=1);
 
-@link     https://www.mineadmin.com
-@document https://doc.mineadmin.com
-@contact  root@imoi.cn
-@license  https://github.com/mineadmin/MineAdmin/blob/master/LICENSE
-EOF;
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
+use PhpCsFixer\Runner\Parallel\ParallelConfig;
 
-return (new PhpCsFixer\Config())
+
+return (new Config())
     ->setRiskyAllowed(true)
-    ->setParallelConfig(new PhpCsFixer\Runner\Parallel\ParallelConfig(8, 24))
+    ->setParallelConfig(new ParallelConfig(8, 24))
     ->setRules([
         '@PSR2' => true,
-        '@PhpCsFixer:risky' => true,
+        '@PhpCsFixer:risky' => false,
         '@PSR12' => true,
         '@PER-CS2.0' => true,
         '@Symfony' => true,
         '@DoctrineAnnotation' => true,
-        '@Symfony:risky' => true,
+        '@Symfony:risky' => false,
         '@PhpCsFixer' => true,
         '@PHP81Migration' => true,
-        'header_comment' => [
-            'comment_type' => 'PHPDoc',
-            'header' => $header,
-            'separate' => 'none',
-            'location' => 'after_declare_strict',
-        ],
         'array_syntax' => [
-            'syntax' => 'short'
+            'syntax' => 'short',
         ],
         'list_syntax' => [
-            'syntax' => 'short'
+            'syntax' => 'short',
         ],
         'concat_space' => [
-            'spacing' => 'one'
+            'spacing' => 'one',
         ],
         'blank_line_before_statement' => [
             'statements' => [
@@ -44,7 +36,7 @@ return (new PhpCsFixer\Config())
         ],
         'general_phpdoc_annotation_remove' => [
             'annotations' => [
-                'author'
+                'author',
             ],
         ],
         'ordered_imports' => [
@@ -78,7 +70,7 @@ return (new PhpCsFixer\Config())
         'lowercase_static_reference' => true,
         'no_useless_else' => true,
         'no_unused_imports' => true,
-        'not_operator_with_successor_space' => true,
+        'not_operator_with_successor_space' => false,
         'not_operator_with_space' => false,
         'ordered_class_elements' => true,
         'php_unit_strict' => false,
@@ -89,12 +81,12 @@ return (new PhpCsFixer\Config())
         'mb_str_functions' => true,
         'set_type_to_cast' => true,
         'no_multiline_whitespace_around_double_arrow' => true,
-        'normalize_index_brace'    => true,
-        'return_to_yield_from'  =>  true,
+        'normalize_index_brace' => true,
+        'return_to_yield_from' => true,
         'class_keyword' => true,
     ])
     ->setFinder(
-        PhpCsFixer\Finder::create()
+        Finder::create()
             ->exclude('vendor')
             ->exclude('bin')
             ->exclude('runtime')
