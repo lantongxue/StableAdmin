@@ -40,15 +40,15 @@ StableAdmin 是基于[MineAdmin](https://github.com/mineadmin/MineAdmin)的分�
 
 ## 环境需求
 
-- Swoole >= 5.0 并关闭 `Short Name`
-- PHP >= 8.1 并开启以下扩展：
+- Swoole >= 6.0 并关闭 `Short Name`
+- PHP >= 8.2 并开启以下扩展：
   - mbstring
   - json
   - pdo
   - openssl
   - redis
   - pcntl
-- [x] Mysql >= 5.7
+- [x] Mysql >= 8.0
 - [x] Pgsql >= 10
 - [x] Sql Server Latest
 - Sqlsrv is Latest

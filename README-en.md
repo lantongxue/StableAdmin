@@ -44,15 +44,15 @@ Before using StableAdmin, please carefully read the [Disclaimer](#disclaimer) an
 
 ## Requirements
 
-- Swoole >= 5.0 (with `Short Name` disabled)
-- PHP >= 8.1 with the following extensions enabled:
+- Swoole >= 6.0 (with `Short Name` disabled)
+- PHP >= 8.2 with the following extensions enabled:
   - mbstring
   - json
   - pdo
   - openssl
   - redis
   - pcntl
-- [x] MySQL >= 5.7
+- [x] MySQL >= 8.0
 - [x] PostgreSQL >= 10
 - [x] SQL Server (Latest)
 - SQLSRV (Latest)

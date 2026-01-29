@@ -1,8 +1,8 @@
-name: mineadmin
+name: stableadmin
 
 volumes:
-  mine_redis_data:
-  mine_mysql_data:
+  stableadmin_redis_data:
+  stableadmin_mysql_data:
 
 services:
   redis:
@@ -10,7 +10,7 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - mine_redis_data:/data
+      - stableadmin_redis_data:/data
     command: redis-server --appendonly yes
     deploy:
       resources:
@@ -25,21 +25,21 @@ services:
       - TZ=Asia/Shanghai
 
   mysql:
-    image: mysql:5.7
+    image: mysql:8.0
     volumes:
-      - mine_mysql_data:/var/lib/mysql
+      - stableadmin_mysql_data:/var/lib/mysql
     ports:
       - "3306:3306"
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: mineadmin
+      MYSQL_DATABASE: stableadmin
       MYSQL_CHARACTER_SET_SERVER: utf8mb4
       MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
       TZ: Asia/Shanghai
 
   hyperf:
-    image: hyperf/hyperf:8.1-alpine-v3.18-swoole
+    image: hyperf/hyperf:8.2-alpine-v3.19-swoole
     volumes:
       - ./:/www
     working_dir: /www
@@ -48,7 +48,7 @@ services:
       - "9503:9503"
     environment:
       - TZ=Asia/Shanghai
-      - APP_NAME=MineAdmin
+      - APP_NAME=StableAdmin
     command:
       - sh
       - -c

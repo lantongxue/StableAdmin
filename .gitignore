@@ -4,10 +4,12 @@
 *.patch
 .idea/
 .git/
+.env.dev
+.env.test
+.env.prod
 runtime/
 vendor/
 .phpintel/
-.env
 .DS_Store
 .phpunit*
 *.cache
