@@ -50,7 +50,7 @@ final class PassportController extends AbstractController
         instance: new Result(data: new PassportLoginVo()),
         title: '登录成功',
         description: '登录成功返回对象',
-        example: '{"code":200,"message":"成功","data":{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjIwOTQwNTYsIm5iZiI6MTcyMjA5NDAiwiZXhwIjoxNzIyMDk0MzU2fQ.7EKiNHb_ZeLJ1NArDpmK6sdlP7NsDecsTKLSZn_3D7k","refresh_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjIwOTQwNTYsIm5iZiI6MTcyMjA5NDAiwiZXhwIjoxNzIyMDk0MzU2fQ.7EKiNHb_ZeLJ1NArDpmK6sdlP7NsDecsTKLSZn_3D7k","expire_at":300}}'
+        example: '{"code":200,"message":"成功","data":{"access_token":"...","refresh_token":"...","expire_at":300}}'
     )]
     #[OA\RequestBody(content: new OA\JsonContent(
         ref: PassportLoginRequest::class,

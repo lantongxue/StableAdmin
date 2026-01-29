@@ -11,7 +11,7 @@ import type { MaProTableColumns, MaProTableExpose } from '@mineadmin/pro-table'
 import type { UserVo } from '~/base/api/user.ts'
 import type { UseDialogExpose } from '@/hooks/useDialog.ts'
 
-import defaultAvatar from '@/assets/images/defaultAvatar.jpg'
+import defaultAvatar from '@/assets/images/defaultAvatar.svg'
 import { ElTag } from 'element-plus'
 import { useMessage } from '@/hooks/useMessage.ts'
 import { deleteByIds, resetPassword } from '~/base/api/user.ts'

@@ -107,7 +107,7 @@ mineAdmin:
     has: 此标签页已收藏过
     noFavorite: 还没有收藏任何标签页
     close: 关闭标签页
-  slogan: 一款开箱即用的后台管理系统
+  slogan: 构筑稳定之基，驱动高效未来
   toolbars:
     notification: 通知
     settings: 设置
@@ -116,7 +116,6 @@ mineAdmin:
     sorts: 工具栏排序
     switchMode: 切换颜色模式
     translate: 国际化
-  mark: 开箱即用
 menu:
   uc:index: 首页
   dashboard:analysis: 分析页

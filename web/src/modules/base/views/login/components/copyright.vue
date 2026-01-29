@@ -9,11 +9,9 @@
 -->
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import type { SystemSettings } from '#/global'
 
 const { locale } = useI18n()
 const userStore = useUserStore()
-const settingStore = useSettingStore()
 
 function switchLanguage(language: string): void {
   locale.value = language
@@ -22,7 +20,6 @@ function switchLanguage(language: string): void {
 
 const title = import.meta.env.VITE_APP_TITLE
 
-const setting: SystemSettings.copyright = settingStore.getSettings('copyright')
 </script>
 
 <template>
@@ -37,7 +34,6 @@ const setting: SystemSettings.copyright = settingStore.getSettings('copyright')
         <ma-svg-icon name="lucide:copyright" />
       </p>
       <span>{{ `${new Date().getFullYear()} ${title}` }}</span>
-      <span><a href="https://beian.miit.gov.cn/" target="_blank" class="trans-link">{{ setting.putOnRecord }}</a></span>
     </div>
   </div>
 </template>

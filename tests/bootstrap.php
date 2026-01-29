@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 use Core\ClassLoader;
 use Hyperf\Contract\ApplicationInterface;
-use Mine\AppStore\Plugin;
-
 
 ini_set('display_errors', 'on');
 ini_set('display_startup_errors', 'on');
@@ -20,7 +18,6 @@ date_default_timezone_set('Asia/Shanghai');
 
 require BASE_PATH . '/vendor/autoload.php';
 
-Plugin::init();
 ClassLoader::init();
 
 $container = require BASE_PATH . '/config/container.php';

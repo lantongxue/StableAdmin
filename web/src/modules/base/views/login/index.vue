@@ -12,7 +12,6 @@ import './style.scss'
 import Dashed from './components/dashed.vue'
 import Light from './components/light.vue'
 import Slogan from './components/slogan.vue'
-import OneWord from './components/one-word.vue'
 import Logo from './components/logo.vue'
 import LoginForm from './components/login-form.vue'
 import CopyRight from './components/copyright.vue'
@@ -25,7 +24,6 @@ import CopyRight from './components/copyright.vue'
       <Dashed />
       <Light />
       <Slogan />
-      <OneWord />
     </div>
     <div class="login-form-container">
       <Logo />
