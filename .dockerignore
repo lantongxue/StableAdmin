@@ -2,8 +2,10 @@
 !app/
 !bin/
 !config/
+!core/
 !databases/
 !plugin/
 !storage/
-!composer.*
+!composer.json
+!.env
 !.env.example
