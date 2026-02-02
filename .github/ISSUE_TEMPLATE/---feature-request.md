@@ -1,6 +1,6 @@
 ---
 name: "\U0001F4A1 功能需求"
-about: 为 mineadmin 提出一个想法
+about: 为 stableadmin 提出一个想法
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''
