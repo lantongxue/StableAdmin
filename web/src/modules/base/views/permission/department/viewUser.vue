@@ -23,11 +23,11 @@ const t = i18n.globalTrans
 
 // 参数配置
 const options = ref<MaTableOptions>({
-  data: data?.department_users ?? [],
   adaption: false,
   height: 400,
-  rowKey: 'id',
 })
+
+const users = data?.department_users ?? []
 
 // 架构配置
 const tableColumns = ref<MaTableColumns[]>([
@@ -52,7 +52,7 @@ const tableColumns = ref<MaTableColumns[]>([
 </script>
 
 <template>
-  <ma-table :options="options" :columns="tableColumns" />
+  <ma-table :options="options" row-key="username" :data="users" :columns="tableColumns" />
 </template>
 
 <style scoped lang="scss">

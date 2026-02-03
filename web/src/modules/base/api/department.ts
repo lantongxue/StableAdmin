@@ -12,6 +12,7 @@ import type { PageList, ResponseStruct } from '#/global'
 export interface DepartmentVo {
   id?: number
   name?: string
+  department_users?: Array<any>
 }
 
 export interface DepartmentSearchVo {
