@@ -47,7 +47,7 @@ class MenuUPdate20250313 extends Seeder
             [
                 'name' => 'system',
                 'path' => '/system',
-                'component' => 'base/views/sys-settings/group/index',
+                'component' => 'base/views/sys-settings/index',
                 'meta' => new Meta([
                     'title' => '系统设置',
                     'type' => 'M',
