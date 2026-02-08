@@ -61,7 +61,7 @@ StableAdmin 是基于[MineAdmin](https://github.com/mineadmin/MineAdmin)的分�
 
 - 项目下载，请确保已经安装了 `Composer`
 ```shell
-composer create-project lantongxue/mineadmin --keep-vcs
+composer create-project lantongxue/stableadmin
 ```
 
 ## 免责声明

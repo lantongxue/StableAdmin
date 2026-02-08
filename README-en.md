@@ -65,7 +65,7 @@ Before using StableAdmin, please carefully read the [Disclaimer](#disclaimer) an
 
 - To download the project (ensure `Composer` is installed):
 ```shell
-composer create-project lantongxue/mineadmin --keep-vcs
+composer create-project lantongxue/stableadmin
 ```
 
 ## Disclaimer
